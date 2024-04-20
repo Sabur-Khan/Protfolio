@@ -25,7 +25,7 @@ const Navbar = () => {
           {/* logo for small device and medium divice */}
             <div className='lg:hidden md:block block'>
 
-              <div className={`lg:hidden md:block sm:block block bg-[#001D48] transition-all duration-700 lg:w-0 md:w-full sm:w-full w-full fixed z-[3000] left-0 right-0 top-0 px-5 py-3 ${sidNav? 'sm:left-[-900px] left-[-400px]' : 'left-[0px]'}`}>
+              <div className={`lg:hidden md:block sm:block block bg-[#001D48] transition-all duration-700 lg:w-0 md:w-full sm:w-full w-full fixed z-[3000] left-0 right-0 top-0 px-5 py-3 ${sidNav? 'sm:left-[-1000px] left-[-500px]' : 'left-[0px]'}`}>
                 <div className={`flex justify-between items-center mb-10 border-b border-b-white/15 pb-4 ${sidNav? 'left-[0px]' : 'left-[-400px]'}`}>
                   <div>
                     <Link to='/'>
