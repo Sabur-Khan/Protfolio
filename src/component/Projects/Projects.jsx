@@ -70,6 +70,7 @@ const Projects = () => {
         </div>
         
         {/* Secon Card */}
+
         <div className=" mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
           <img
             className="text-white"
@@ -129,6 +130,7 @@ const Projects = () => {
         </div>
 
         {/* Thard Card */}
+
         <div className=" mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
           
           <img
@@ -190,6 +192,7 @@ const Projects = () => {
         </div>
 
         {/* Four Card */}
+
         <div className=" mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
 
           <img
@@ -231,14 +234,132 @@ const Projects = () => {
             <ul className="flex justify-between items-center flex-wrap">
               <li>
                 <a className="text-white font-bold text-base px-7 py-3 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat"
-                  href="https://sabur-khan.github.io/Innovate-secon-project/#"
+                  href="https://sabur-khan.github.io/Summer-Sale-Project/"
                 >
                   Live Link
                 </a>
               </li>
               <li>
                 <a className="text-white font-bold text-base px-7 py-3 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat"
-                  href="https://github.com/Sabur-Khan/Innovate-secon-project"
+                  href="https://github.com/Sabur-Khan/Summer-Sale-Project"
+                >
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Five Card */}
+        
+        <div className=" mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
+
+          <img
+            className="text-white"
+            src={projectData[4].images}
+            alt="cardImg"
+          />
+
+          <div className="py-4 px-4 ">
+            <h2 className="py-2 capitalize relative text-white font-Montserrat text-2xl font-medium after:w-4 after:absolute after:h-[4px] after:bg-[#f3c623] after:left-0 after:bottom-[-3px]">
+              {projectData[4].title}
+            </h2>
+            <p className="font-normal py-3 font-Montserrat text-white text-justify text-base my-4">
+              {projectData[4].cardInfo}
+            </p>
+          </div>
+
+          <div className="px-4">
+            <ul className="flex flex-wrap justify-between gap-3">
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[4].tagSix}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[4].tagSeven}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[4].tagEight}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[4].tagNine}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[4].tagTen}
+              </li>
+            </ul>
+          </div>
+
+          <div className="px-4 py-2 my-9">
+            <ul className="flex justify-between items-center flex-wrap">
+              <li>
+                <a className="text-white font-bold text-base px-7 py-3 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat"
+                  href="https://petroil-project-with-react.vercel.app/"
+                >
+                  Live Link
+                </a>
+              </li>
+              <li>
+                <a className="text-white font-bold text-base px-7 py-3 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat"
+                  href="https://github.com/Sabur-Khan/Petroil-Project-with-react"
+                >
+                  GitHub
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* six Card */}
+
+        <div className=" mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
+
+          <img
+            className="text-white"
+            src={projectData[5].images}
+            alt="cardImg"
+          />
+
+          <div className="py-4 px-4 ">
+            <h2 className="py-2 capitalize relative text-white font-Montserrat text-2xl font-medium after:w-4 after:absolute after:h-[4px] after:bg-[#f3c623] after:left-0 after:bottom-[-3px]">
+              {projectData[5].title}
+            </h2>
+            <p className="font-normal py-3 font-Montserrat text-white text-justify text-base my-4">
+              {projectData[5].cardInfo}
+            </p>
+          </div>
+
+          <div className="px-4">
+            <ul className="flex flex-wrap justify-between gap-3">
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[5].tagSix}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[5].tagSeven}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[5].tagEight}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[5].tagNine}
+              </li>
+              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
+                {projectData[5].tagTen}
+              </li>
+            </ul>
+          </div>
+
+          <div className="px-4 py-2 my-9">
+            <ul className="flex justify-between items-center flex-wrap">
+              <li>
+                <a className="text-white font-bold text-base px-7 py-3 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat"
+                  href="https://sabur-khan.github.io/E-Buy-Project/index.html"
+                >
+                  Live Link
+                </a>
+              </li>
+              <li>
+                <a className="text-white font-bold text-base px-7 py-3 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat"
+                  href="https://github.com/Sabur-Khan/E-Buy-Project"
                 >
                   GitHub
                 </a>
