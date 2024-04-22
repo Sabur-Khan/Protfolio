@@ -4,9 +4,12 @@ import Container from '../../component/Container/Container'
 import Projects from '../../component/Projects/Projects'
 import MyBlog from '../../component/MyBlog/MyBlog'
 import Contacts from '../../component/Contacts/Contacts'
+
+
 const Home = () => {
   return (
     <div>
+
       <Container>
         <Banner/>
         <Projects/>

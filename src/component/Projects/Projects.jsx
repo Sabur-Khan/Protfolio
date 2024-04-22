@@ -219,13 +219,10 @@ const Projects = () => {
                 {projectData[3].tagSeven}
               </li>
               <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {projectData[3].tagEight}
-              </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
                 {projectData[3].tagNine}
               </li>
               <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {projectData[3].tagTen}
+                {projectData[3].tagEleven}
               </li>
             </ul>
           </div>
@@ -276,9 +273,6 @@ const Projects = () => {
               </li>
               <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
                 {projectData[4].tagSeven}
-              </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {projectData[4].tagEight}
               </li>
               <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
                 {projectData[4].tagNine}
