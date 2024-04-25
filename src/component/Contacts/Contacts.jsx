@@ -1,7 +1,6 @@
 import React from 'react'
 import { IoIosSend } from "react-icons/io";
-import contactUs from '../../assets/images/contact-us.png'
-
+import ContactRight from "../../assets/images/contact.gif"
 const Contacts = () => {
   return (
     <div className='my-16 lg:px-2 md:px-4 sm:px-5 px-5'>
@@ -12,7 +11,7 @@ const Contacts = () => {
             <p className='font-normal font-Montserrat text-[#e6f1ff] text-center my-10 lg:text-2xl md:text-xl sm:text-lg text-lg'>Have a question or want to work together? I'd really love to hear from your feedback.</p>
         </div>
         <div className='my-20 flex justify-between items-center'>
-            <div className='py-5 rounded-md px-4 bg-[#172A45] border border-[#1f498a] shadow-[#1f498a] shadow-md lg:w-[35%] md:w-full sm:w-full w-full m-auto'>
+            <div className='py-5 rounded-md px-4 bg-[#172A45] border border-[#1f498a] shadow-[#1f498a] shadow-md lg:w-1/2 md:w-full sm:w-full w-full'>
                 <h3 className='text-center text-2xl text-white font-semibold'>GET IN TOUCH</h3>
                 <div className='py-7'>
                     <form>
@@ -26,7 +25,7 @@ const Contacts = () => {
                 </div>
             </div>
             <div className='lg:block md:hidden sm:hidden hidden'>
-                <img src={contactUs} alt="Contact-Us" srcset="" />
+                <img src={ContactRight} className='w-[500px]' alt="Contact-Us" srcset="" />
             </div>
         </div>
     </div>

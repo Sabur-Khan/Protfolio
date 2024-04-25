@@ -8,10 +8,10 @@ import { BsInfoSquareFill } from "react-icons/bs";
 import { RiProjectorFill } from "react-icons/ri";
 import { SiBlogger } from "react-icons/si";
 import { MdContactPage } from "react-icons/md";
-
-
+import { FaDownload } from "react-icons/fa6";
 import mycv from '../../../assets/images/CV-Sabur-Khan.pdf';
 import Container from '../../Container/Container';
+import SocialLink from '../../SocialLink/SocialLink';
 
 const Navbar = () => {
   const [sidNav, setSidNav] = useState(true)
@@ -23,72 +23,78 @@ const Navbar = () => {
         <div>
 
           {/* logo for small device and medium divice */}
-            <div className='lg:hidden md:block block'>
+          <div className='lg:hidden md:block block '>
 
-              <div className={`lg:hidden md:block sm:block block bg-[#001D48] transition-all duration-700 lg:w-0 md:w-full sm:w-full w-full fixed z-[3000] left-0 right-0 top-0 px-5 py-3 ${sidNav? 'sm:left-[-1000px] left-[-500px]' : 'left-[0px]'}`}>
-                <div className={`flex justify-between items-center mb-10 border-b border-b-white/15 pb-4 ${sidNav? 'left-[0px]' : 'left-[-400px]'}`}>
-                  <div>
-                    <Link to='/'>
-                      <img className=' w-[150px]' src={logo} alt="logo"/>
-                    </Link>
-                  </div>
-
-                  <div className='px-1 py-1 border cursor-pointer' onClick={()=>setSidNav(!sidNav)}>
-                     
-                    {sidNav ? <div></div> : <IoCloseSharp className='text-white text-[25px]'/>}
-                  </div>
+            <div className={`lg:hidden md:block sm:block block bg-[#001D48] transition-all duration-700 lg:w-0 md:w-full sm:w-full w-full fixed z-[3000] left-0 right-0 top-0 px-5 py-3 ${sidNav? 'sm:left-[-1000px] left-[-500px]' : 'left-[0px]'}`}>
+              <div className={`flex justify-between items-center mb-10 border-b border-b-white/15 pb-4 ${sidNav? 'left-[0px]' : 'left-[-400px]'}`}>
+                <div>
+                  <Link to='/'>
+                    <img className=' w-[150px]' src={logo} alt="logo"/>
+                  </Link>
                 </div>
 
-                <div className='my-5'>
-
-                  <div class="text-sky-600 mb-5 pb-2 border-b">
-                    <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Home'>
-                      <IoHome className='mr-5 text-xl'/> Home
-                    </Link>
+                <div className='px-1 py-1 border cursor-pointer' onClick={()=>setSidNav(!sidNav)}>
                     
-                  </div>
-              
-                  <div class="text-sky-600 mb-5 pb-2 border-b">
-                    <Link className=' flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/About'>
-                      <BsInfoSquareFill className='mr-5 text-xl' /> About
-                    </Link>
-                  </div>
-
-                  <div class="text-sky-600 mb-5 pb-2 border-b">
-                    <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Projects'>
-                      <RiProjectorFill className='mr-5 text-xl'/> Project
-                    </Link>
-                  </div>
-
-                  <div class="text-sky-600 mb-5 pb-2 border-b">
-                    <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Blog'>
-                     <SiBlogger className='mr-5 text-xl'/> Blog
-                    </Link>
-                    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-sky-600"></span>
-                  </div>
-
-                  <div class="text-sky-600 mb-5 pb-2 border-b">
-                    <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Contact'>
-                      <MdContactPage className='mr-5 text-xl'/> Contact
-                    </Link>
-                  </div>
-
+                  {sidNav ? <></> : <IoCloseSharp className='text-white text-[25px]'/>}
                 </div>
               </div>
 
-              <div className=' flex justify-between items-center left-0 right-0 fixed bg-[#001D48] top-0 py-2 px-3 z-[2000]'>
-                <Link to='/'>
-                  <img className=' w-[200px]' src={logo} alt="logo"/>
-                </Link>
-                <button onClick={()=>setSidNav(!sidNav)} className='text-white text-[25px] cursor-pointer'>
-                  {sidNav ? <FaBarsStaggered /> : <div></div>}
-                </button>
-              </div>
+              <div className='my-5'>
 
+                <div class="text-sky-600 mb-5 pb-2 border-b">
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Home'>
+                    <IoHome className='mr-5 text-xl'/> Home
+                  </Link>
+                  
+                </div>
+            
+                <div class="text-sky-600 mb-5 pb-2 border-b">
+                  <Link className=' flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/About'>
+                    <BsInfoSquareFill className='mr-5 text-xl' /> About
+                  </Link>
+                </div>
+
+                <div class="text-sky-600 mb-5 pb-2 border-b">
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Projects'>
+                    <RiProjectorFill className='mr-5 text-xl'/> Project
+                  </Link>
+                </div>
+
+                <div class="text-sky-600 mb-5 pb-2 border-b">
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Blog'>
+                    <SiBlogger className='mr-5 text-xl'/> Blog
+                  </Link>
+                  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[3px] bg-sky-600"></span>
+                </div>
+
+                <div class="text-sky-600 mb-5 pb-2 border-b">
+                  <Link className='flex items-center text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat' to='/Contact'>
+                    <MdContactPage className='mr-5 text-xl'/> Contact
+                  </Link>
+                </div>
+
+              </div>
+                <div className='w-full mt-16'>
+                  <SocialLink/>
+                  <p className='text-sm text-white font-Montserrat font-medium pb-4'> © Sabur Khan 2024. All Rights Reseverd</p>
+                </div>
             </div>
 
-          {/* Large screen navbar */}
 
+            <div className=' flex justify-between items-center left-0 right-0 fixed bg-[#001D48] top-0 py-2 px-3 z-[2000]'>
+              <Link to='/'>
+                <img className=' w-[200px]' src={logo} alt="logo"/>
+              </Link>
+              <button onClick={()=>setSidNav(!sidNav)} className='text-white text-[25px] cursor-pointer'>
+                {sidNav ? <FaBarsStaggered /> : <></>}
+              </button>
+            </div>
+
+            
+
+          </div>
+
+          {/* Large screen navbar */}
           <nav className='justify-between items-center lg:flex md:hidden hidden'>
 
             {/* logo section */}
@@ -137,8 +143,8 @@ const Navbar = () => {
             </div>
 
             {/* Button section */}
-            <div>
-              <a className=' hover:bg-[#DDA71F] hover:text-[#001D48] duration-700 px-[30px] py-2 text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat border border-[#DDA71F]' href={mycv} download="CV-Sabur-Khan.pdf">Resume</a>
+            <div className=''>
+              <a className='flex hover:bg-[#DDA71F] hover:text-[#001D48] duration-700 px-[8px] py-[8px] text-white lg:text-base md:text-sm text-sm font-medium font-Montserrat border border-[#DDA71F] gap-3 justify-between items-center' href={mycv} download="CV-Sabur-Khan.pdf">Download Resume <FaDownload /></a>
             </div>
 
           </nav>
