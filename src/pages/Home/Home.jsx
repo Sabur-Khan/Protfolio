@@ -4,6 +4,7 @@ import Container from '../../component/Container/Container'
 import Projects from '../../component/Projects/Projects'
 import MyBlog from '../../component/MyBlog/MyBlog'
 import Contacts from '../../component/Contacts/Contacts'
+import SpacialWork from '../../component/SpacialWork/SpacialWork'
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         <Projects/>
         <MyBlog/>
         <Contacts/>
+        <SpacialWork/>
       </Container>
     </div>
   )

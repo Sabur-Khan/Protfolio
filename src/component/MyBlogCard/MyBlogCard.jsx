@@ -12,12 +12,13 @@ const MyBlogCard = (props) => {
             <p className='font-normal font-Montserrat text-white text-justify text-base my-4'>{props.blogInfo}</p>
           </div>
           <div className='px-4 py-1'>
-            <ul>
+            <ul className='flex justify-between items-center'>
               <li>
                 <a className='text-white inline-block font-bold text-base px-3 py-2 hover:bg-[#f3c623] hover:text-black transition-all duration-500 bg-transparent border-[#f3c623] border-2 font-Montserrat uppercase' href="#">Read Details</a>
               </li>
             </ul>
           </div>
+
         </div>
       </div>
     </div>
