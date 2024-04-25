@@ -3,12 +3,13 @@ import React from "react";
 const ProjectCard = (props) => {
   return (
     <div>
-        <div key={props.id} className="border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
+        <div key={props.id} className="border group border-[#1f498a] h-full hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
           <img className="text-white" src={props.images} alt="cardImg" />
           <div className="py-4 px-4 ">
-            <h2 className="py-2 capitalize relative text-white font-Montserrat text-2xl font-medium after:w-4 after:absolute after:h-[4px] after:bg-[#f3c623] after:left-0 after:bottom-[-3px]">
+            <h2 className="py-2 capitalize text-white font-Montserrat text-2xl font-medium ">
               {props.title}
             </h2>
+            <div className="relative after:duration-500 after:transition-all after:w-4 after:absolute after:h-[4px] after:bg-[#f3c623] after:left-0 after:bottom-[-3px] hidden group-hover:block"></div>
             <p className="font-normal py-3 font-Montserrat text-white text-justify text-base my-4">
               {props.cardInfo}
             </p>
