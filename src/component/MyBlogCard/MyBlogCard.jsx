@@ -4,7 +4,7 @@ import React from 'react'
 const MyBlogCard = (props) => {
   return (
     <div>
-      <div key={props.id} className=' mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2'>
+      <div key={props.id} className='border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2'>
         <img src={props.images} alt="blog-img" />
         <div className='py-2'>
           <div className='px-4 py-4'>

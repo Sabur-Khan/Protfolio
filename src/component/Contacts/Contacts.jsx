@@ -4,7 +4,7 @@ import contactUs from '../../assets/images/contact-us.png'
 
 const Contacts = () => {
   return (
-    <div className='my-16 lg:px-0 md:px-0 sm:px-5 px-5'>
+    <div className='my-16 lg:px-2 md:px-4 sm:px-5 px-5'>
         <div>
             <h2 className='relative text-center before:w-6 before:h-6 before:bg-[#f3c623] before:z-50 before:absolute before:bottom-[-12px] before:rounded-full before:shadow-2xl before:ring-inset before:ring-[#0a182e] before:ring-8 lg:before:left-[49%] md:before:left-[50%] sm:before:left-[50%] before:left-[45%] after:w-[250px] after:h-[2px] after:bg-white after:absolute after:bottom-0 lg:after:left-[42%] md:after:left-[34%] sm:after:left-[32%] after:left-[10%] font-Titillium Web text-[#f3c623] pb-6 font-medium text-3xl'>
                 CONTACT <span className=' text-white '>ME</span> 

@@ -1,11 +1,13 @@
 import React from 'react'
 import Container from '../../component/Container/Container'
-
+import MyBlog from '../../component/MyBlog/MyBlog'
 const Blog = () => {
   return (
     <div>
       <Container>
-        Blog
+        <div className=" my-[100px]">
+          <MyBlog/>
+        </div>
       </Container>
     </div>
   )

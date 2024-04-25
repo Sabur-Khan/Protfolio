@@ -3,7 +3,7 @@ import React from "react";
 const ProjectCard = (props) => {
   return (
     <div>
-        <div key={props.id} className=" mt-16 border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
+        <div key={props.id} className="border border-[#1f498a] hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
           <img className="text-white" src={props.images} alt="cardImg" />
           <div className="py-4 px-4 ">
             <h2 className="py-2 capitalize relative text-white font-Montserrat text-2xl font-medium after:w-4 after:absolute after:h-[4px] after:bg-[#f3c623] after:left-0 after:bottom-[-3px]">

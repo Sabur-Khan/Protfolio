@@ -12,7 +12,7 @@ const Banner = () => {
   return (
       <div className='my-14'>
        <Container>
-        <div className='grid lg:grid-cols-2 gap-4 items-center'>
+        <div className='grid px-2 lg:grid-cols-2 gap-4 items-center'>
 
           <div>
             <BannerTitle/>

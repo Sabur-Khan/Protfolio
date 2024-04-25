@@ -1,11 +1,13 @@
 import React from 'react'
 import Container from '../../component/Container/Container'
-
+import Contacts from '../../component/Contacts/Contacts'
 const Contact = () => {
   return (
     <div>
       <Container>
-        <h1>Contact</h1>
+        <div className=" my-[100px]">
+          <Contacts/>
+        </div>
       </Container>
     </div>
   )
