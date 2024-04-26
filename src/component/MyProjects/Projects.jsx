@@ -2,7 +2,7 @@ import React from "react";
 import projectData from "../../projectData/projectData";
 import ProjectCard from "../ProjectCard/ProjectCard";
 const Projects = () => {
-  
+  console.log(projectData[0].all);
   return (
     <div className=" my-[100px]">
       <div className=" text-center mb-16">

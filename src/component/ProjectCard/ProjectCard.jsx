@@ -1,6 +1,7 @@
 import React from "react";
 
 const ProjectCard = (props) => {
+  console.log(props );
   return (
     <div>
         <div key={props.id} className="border group border-[#1f498a] h-full hover:shadow-md hover:shadow-[#1f498a] rounded transition-all duration-500 hover:-translate-y-2">
@@ -17,39 +18,70 @@ const ProjectCard = (props) => {
 
           <div className="px-4">
             <ul className="flex flex-wrap justify-between gap-3">
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagOne}
+
+              <li className={`${props.tagOne? "bg-[#f3c623]":"bg-transparent cursor-auto"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagOne }
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagTwo}
+              <li className={`${props.tagTwo? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagTwo}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagThree}
+              <li className={`${props.tagThree? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagThree}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagFour}
+              <li className={`${props.tagFour? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagFour}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagFive}
+              <li className={`${props.tagFive? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagFive}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagSix}
+              <li className={`${props.tagSix? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagSix}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagSeven}
+              <li className={`${props.tagSeven? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagSeven}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagEight}
+              <li className={`${props.tagEight? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagEight}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagNine}
+              <li className={`${props.tagNine? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagNine}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagTen}
+              <li className={`${props.tagTen? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagTen}
               </li>
-              <li className="text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold">
-                {props.tagEleven}
+              <li className={`${props.tagEleven? "bg-[#f3c623]":"bg-transparent"} text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white duration-500 transition-all font-bold`}>
+                {props?.tagEleven}
               </li>
+              {/* <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagTwo}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagThree}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagFour}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagFive}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagSix}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagSeven}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagEight}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagNine}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagTen}
+              </li>
+              <li className={`text-black cursor-pointer py-2 px-3 bg-[#f3c623] rounded-sm hover:bg-transparent hover:text-white border border-[#f3c623] duration-500 transition-all font-bold`}>
+                {props?.tagEleven}
+              </li> */}
             </ul>
           </div>
 
