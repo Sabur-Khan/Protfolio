@@ -3,7 +3,7 @@ import Container from "../../component/Container/Container";
 import leftSideImage from '../../assets/images/banner-profile.png'
 const About = () => {
   return (
-    <div className='my-14'>
+    <div className='my-14 lg:px-2 md:px-4 sm:px-5 px-5'>
       <Container>
         <div className=" text-center ">
           <h2 className="relative before:w-6 before:h-6 before:bg-[#f3c623] before:z-50 before:absolute before:bottom-[-12px] before:rounded-full before:shadow-2xl before:ring-inset before:ring-[#0a182e] before:ring-8 lg:before:left-[49%] md:before:left-[50%] sm:before:left-[50%] before:left-[45%] after:w-[250px] after:h-[2px] after:bg-white after:absolute after:bottom-0 lg:after:left-[42%] md:after:left-[34%] sm:after:left-[32%] after:left-[16%] font-Montserrat text-white pb-6 font-medium text-3xl">
